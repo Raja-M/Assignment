@@ -1,8 +1,7 @@
 # Assignment
 Assignment
-## Git-Repo: git services CLI utility
-
-* To get the sources:
-  * https://github.com/guyzmo/git-repo
-  * https://gitlab.com/guyzmo/git-repo
-  * https://bitbucket.org/guyzmo/git-repo
+## Git-Repo: Customers List with Rewards
+* To get the customer info
+  * https://host.com/rewards
+  * https://host.com/rewards/{custId}
+  * https://host.com/transactions
