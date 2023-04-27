@@ -6,7 +6,7 @@ Assignment
   *
 
 #Response:
-
+```
 [
     {
         "Thomas": {
@@ -280,7 +280,7 @@ Assignment
         }
     }
 ]
-
+```
 Table :
 
 CREATE TABLE `custtrns` (
