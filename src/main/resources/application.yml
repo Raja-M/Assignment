@@ -13,7 +13,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/custtrns
     username: developer
-    password: Database#1 #root@admin
+    password: ********
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
@@ -47,7 +47,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/custtrns
     username: developer
-    password: Database#1 #root@admin
+    password: ********
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
