@@ -280,7 +280,7 @@ Assignment
         }
     }
 ]
-```
+
 Table :
 
 CREATE TABLE `custtrns` (
@@ -323,5 +323,5 @@ id	custname	trnsamt	transdate
 28	Thomas	160	2023-02-18 4:26:19
 29	Paul	340	2023-02-18 4:26:19
 30	Paul	230	2023-03-12 12:01:30
-
+```
 
