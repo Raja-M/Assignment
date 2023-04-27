@@ -14,7 +14,7 @@ public class CustTrnsController {
 	CustTrnsService custTrnsService;
 
 
-	@GetMapping("/customer/list")
+	@GetMapping("/get/rewards")
 	public Object[] homeContent(@RequestParam ( value = "qtr"   , required = true ) Integer qtr) {
 		log.debug("In controller : {}", qtr);
 		Object[] quarter =  custTrnsService.fetchCustTrnsByQuarter( qtr);
