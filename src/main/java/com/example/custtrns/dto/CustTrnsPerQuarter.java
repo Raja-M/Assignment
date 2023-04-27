@@ -4,9 +4,9 @@ import lombok.Data;
 
 @Data
 public class CustTrnsPerQuarter {
-    CustTrnsList firstMonth;
-    CustTrnsList secondMonth;
-    CustTrnsList thirdMonth;
+    CustTrnsList firstMonth = new CustTrnsList();
+    CustTrnsList secondMonth = new CustTrnsList();
+    CustTrnsList thirdMonth = new CustTrnsList();
     public int getPoints(){
         return firstMonth.getPoints() + secondMonth.getPoints() + thirdMonth.getPoints();
     }

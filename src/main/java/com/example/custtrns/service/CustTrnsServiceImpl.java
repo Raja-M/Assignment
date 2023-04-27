@@ -48,6 +48,7 @@ public class CustTrnsServiceImpl implements CustTrnsService {
         map = getQuarter(map,firstQuarterMap,"January",1);
         map = getQuarter(map,secondQuarterMap,"February",2);
         map = getQuarter(map,thirdQuarterMap,"March",3);
+        System.out.println(map);
         return map.entrySet().toArray();
     }
     private Map<String,CustTrnsPerQuarterByCustomer> getQuarter(Map<String,CustTrnsPerQuarterByCustomer> map  ,Map<String, List<CustTrns>> quarterMap , String monthName, int monthNumber){
@@ -69,6 +70,7 @@ public class CustTrnsServiceImpl implements CustTrnsService {
             if(monthNumber==1){
                 quarter.setFirstMonth(custTrnsList);
             }else if(monthNumber==2){
+                System.out.println(custTrnsList);
                 quarter.setSecondMonth(custTrnsList);
             }else if(monthNumber==3){
                 quarter.setThirdMonth(custTrnsList);
@@ -83,6 +85,7 @@ public class CustTrnsServiceImpl implements CustTrnsService {
         List<CustTrns> list = custTrnsRepository.findByTransDateBetween(LocalDate.of(2023, startMonth, 01).atStartOfDay(),LocalDate.of(2023, startMonth+1, 01).atStartOfDay());
         List<String> custList = new ArrayList<>(
                 new HashSet<>(list.stream().map(CustTrns::getCustName).collect(Collectors.toList())));
+        System.out.println(custList);
         Map<String, List<CustTrns>> map = new HashMap<String, List<CustTrns>>();
 
         for(String s : custList){
@@ -90,6 +93,7 @@ public class CustTrnsServiceImpl implements CustTrnsService {
 
             map.put(s,filterList);
         }
+        System.out.println(map);
         return map;
     }
 
